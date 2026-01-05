@@ -16,7 +16,6 @@ Built with **React**, **Redux**, **Node/Express**, and **MySQL**, this project w
 ![Axios](https://img.shields.io/badge/HTTP-Axios-5A29E4?logo=axios&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS-38B2AC?logo=tailwindcss&logoColor=white)
 
-![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
 ---
@@ -27,29 +26,55 @@ Built with **React**, **Redux**, **Node/Express**, and **MySQL**, this project w
 
 Accessible after login (Redux holds the authenticated `auth.user` object), the dashboard lets the student manage all portfolio content:
 
+- **Dashboaard Landing Page**
+  - Navigation cards to the Profile, Projects, Experiences and Awards pages.
+<br>
+  <img width="1918" height="860" alt="image" src="https://github.com/user-attachments/assets/756672a0-e358-4a4b-887a-42e850b2b6a8" />
+<br>
+<br>
+
 - **Profile**
   - Bio
   - GitHub URL
   - LinkedIn URL
   - Resume upload (stored as a **Base64 data URL**)
   - Profile picture upload (also stored as Base64)
+<br>
+  <img width="1918" height="867" alt="image" src="https://github.com/user-attachments/assets/1be8bcb2-74f3-4309-9d96-709649dd6aef" />
+<br>
+<br>
+
 - **Projects**
   - Title
   - Short summary and detailed description
   - Tech stack and tags
   - Live URL
   - **Publish / Unpublish toggle** (controls what appears on the public site)
+<br>
+  <img width="1918" height="867" alt="image" src="https://github.com/user-attachments/assets/912ceb8d-5b4d-4cf5-8e00-6cea7e9e98ff" />
+  <img width="1918" height="570" alt="image" src="https://github.com/user-attachments/assets/6ebb0e04-521d-46c6-a938-07b471770e1b" />
+<br>
+<br>
+
 - **Experience**
   - Company name
   - Position title
   - Description
   - **Publish / Unpublish toggle**
+<br>
+  <img width="1918" height="832" alt="image" src="https://github.com/user-attachments/assets/31fb2b50-4637-41db-8501-2eead7e4535f" />
+<br>
+<br>
+
 - **Awards**
   - Award title
   - Issuer
   - Issued date
   - Description
   - **Publish / Unpublish toggle**
+<br>
+  <img width="1918" height="867" alt="image" src="https://github.com/user-attachments/assets/3c41e8ac-eaf7-437d-8a13-491228814a8c" />
+<br>
 
 Each section uses **Axios** to talk to the Node/Express backend, which persists data in **MySQL**.
 
@@ -73,6 +98,15 @@ A separate React page shows a **read-only, public version** of the portfolio for
     - Award titles displayed in a marquee/slide-in style, one-by-one.
   - **About Me section**:
     - Student bio slides in from the side using CSS animations.
+   
+<img width="1918" height="865" alt="image" src="https://github.com/user-attachments/assets/f1972359-43ee-4874-8693-260d4aaaca0b" />
+<img width="1918" height="697" alt="image" src="https://github.com/user-attachments/assets/935c6199-c06a-4142-becd-0ce0fa79e2bd" />
+<img width="1918" height="797" alt="image" src="https://github.com/user-attachments/assets/725b06f9-51c5-4e46-8ce6-c8da0fb20a84" />
+<img width="1918" height="752" alt="image" src="https://github.com/user-attachments/assets/dd0157ab-2f31-4605-bfdc-8497f260bfa3" />
+
+
+
+
 
 The public page is focused on being **simple, scannable, and recruiter-friendly**.
 
@@ -225,7 +259,7 @@ Change this to the email of the user whose portfolio should be shown publicly.
 
 From the server directory:
 ```bash
-npm start
+node index.js
 ```
 
 This should start the Express server on http://localhost:8080 (or whatever port you configured).
@@ -234,7 +268,7 @@ This should start the Express server on http://localhost:8080 (or whatever port 
 
 From the client (React) directory:
 ```bash
-npm run dev   # Vite
+npm run dev   
 ```
 Then open the URL printed to the console (e.g. http://localhost:5173 or http://localhost:3000).
 
