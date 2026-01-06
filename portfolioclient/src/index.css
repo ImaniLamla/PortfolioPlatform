@@ -1,0 +1,76 @@
+body {
+  background-color: #e8dfe0;
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slide-in-left 0.7s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slide-in-right 0.7s ease-out forwards;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+@keyframes pillFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.award-pill {
+  animation: pillFadeUp 5s ease-out forwards;
+}
+
+.slide-in-bio {
+  opacity: 0;                         
+  transform: translateX(-60px);       
+  animation: slide-in-bio 2s ease-out 5s forwards;
+}
+
+@keyframes slide-in-bio {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@import "tailwindcss";
